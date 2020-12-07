@@ -1,10 +1,25 @@
 import {ExcelComponent} from '../../core/ExcelComponent';
 
-// const className = 'excel__header';
-
 
 export class Header extends ExcelComponent {
+  className() {
+    return 'excel__header'
+  }
+
   toHtml() {
-    return '<h1>Header</h1>'
+    return `
+    <div class="excel__header">
+      <input type="text" class="input" value="Новая таблица">
+
+      <div>
+          <div class="button">
+              <i class="material-icons">delete</i>
+          </div>
+          <div class="button">
+              <i class="material-icons">exit_to_app</i>
+          </div>
+      </div>
+    </div>
+    `
   }
 }

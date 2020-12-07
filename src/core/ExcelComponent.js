@@ -5,4 +5,7 @@ export class ExcelComponent extends DomListener {
   toHtml() {
     return ''
   }
+  className() {
+    return ''
+  }
 }

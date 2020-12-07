@@ -1,5 +1,10 @@
 import {ExcelComponent} from '../../core/ExcelComponent';
 
-export class Header extends ExcelComponent {
+// const className = 'excel__header';
 
+
+export class Header extends ExcelComponent {
+  toHtml() {
+    return '<h1>Header</h1>'
+  }
 }
